@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+    <body>
+      <script type="text/javascript">
+         if( sessionStorage.hits ){
+          sessionStorage.hita = number(sessionStorage.hits) +1;
+         }
+         else{
+          sessionStorage.hits = 1;
+
+         }
+         document.write("Total Hits :" + sessionStorage.hits);
+         </script>
+         <p>Refresh the page to increase number of hits.</p>
+         <p>Close the windo and open it again and check the result</p>
+    </body>
 </html>
